@@ -1,0 +1,113 @@
+.container {
+  margin: 0px;
+  padding-top: 20px;
+  height: fit-content;
+  width: 100vw;
+  background: linear-gradient(45deg, #fc466b, #3f5efb);
+  background-size: cover;
+
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  background: rgba(255, 255, 255, 0.3);
+  padding-bottom: 10px;
+  width: 50%;
+  height: auto;
+  margin-inline: auto;
+  border-radius: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.form input {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background: transparent;
+  width: 200px;
+  padding: 1em;
+  margin-bottom: 2em;
+  border: none;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  border-radius: 5000px;
+  backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.form input:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+
+::placeholder {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+input:focus::placeholder {
+  color: transparent;
+  text-shadow: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.new_budget_button:not(:disabled) {
+  margin-left: 5px;
+  background-color: red;
+}
+.add_button {
+  margin: 0px;
+}
+.buttons_container {
+  display: flex;
+}
+
+.new_expense_container {
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.new_expense_container input {
+  margin-bottom: 10px;
+}
+.end_planing {
+  width: 80%;
+  text-align: center;
+  margin-inline: auto;
+}
+.buttons_container {
+  margin-inline: auto;
+  max-width: 50%;
+
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20px;
+}
+.filler {
+  height: 20px;
+}
+.signOutButton {
+  display: block;
+  margin-bottom: 20px;
+  margin-inline: auto;
+}
