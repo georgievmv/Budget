@@ -46,7 +46,10 @@ const Expenses = (props) => {
     event.preventDefault();
     for (let i = 0; i < expenses.length; i++) {
       if (expenses[i].id === addedExpense.id) {
-        if (expenses[i].planed < addedExpense.amount) {
+        if (
+          expenses[i].planed < addedExpense.amount &&
+          expenses[i].amount < addedExpense.amount
+        ) {
           alert("Not enough money 1");
           return;
         } else {

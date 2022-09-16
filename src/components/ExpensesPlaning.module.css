@@ -74,9 +74,6 @@ input::-webkit-inner-spin-button {
 .add_button {
   margin: 0px;
 }
-.buttons_container {
-  display: flex;
-}
 
 .new_expense_container {
   width: fit-content;
@@ -110,4 +107,24 @@ input::-webkit-inner-spin-button {
   display: block;
   margin-bottom: 20px;
   margin-inline: auto;
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 80%;
+  }
+  .buttons_container {
+    display: flex;
+    max-width: 90%;
+
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
+  }
+  .end_planing {
+    width: 100%;
+    text-align: center;
+    margin-inline: 0px;
+  }
 }

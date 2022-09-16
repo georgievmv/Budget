@@ -22,7 +22,7 @@ const Home = (props) => {
           Sign Out
         </Button>
         <form className={styles.form} onSubmit={submitHandler}>
-          <label className={styles.label}>Налични средства за месеца</label>
+          <label className={styles.label}>Enter your budget</label>
           <input
             className={styles.input}
             ref={cashRef}
@@ -30,7 +30,7 @@ const Home = (props) => {
             type="number"
           />
           <Button className={styles.button} type="submit">
-            продължи
+            Continue
           </Button>
         </form>
       </div>

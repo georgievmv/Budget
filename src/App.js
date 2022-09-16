@@ -16,13 +16,13 @@ import { doc, getDoc } from "firebase/firestore";
 import { db } from "./firebase";
 
 export const initialExpenses = [
-  { id: "e1", expense: "Храна", amount: 0, planed: 0 },
-  { id: "e2", expense: "Сметки", amount: 0, planed: 0 },
-  { id: "e3", expense: "Дом", amount: 0, planed: 0 },
-  { id: "e4", expense: "Транспорт", amount: 0, planed: 0 },
+  { id: "e1", expense: "Food", amount: 0, planed: 0 },
+  { id: "e2", expense: "Bills", amount: 0, planed: 0 },
+  { id: "e3", expense: "Home", amount: 0, planed: 0 },
+  { id: "e4", expense: "Transport", amount: 0, planed: 0 },
   {
     id: "e5",
-    expense: "Медицински",
+    expense: "Medical",
     amount: 0,
     planed: 0,
   },
