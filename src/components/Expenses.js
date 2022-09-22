@@ -101,18 +101,18 @@ const Expenses = (props) => {
                   <input
                     onChange={addExpenseChangeHandler}
                     className={styles.input}
-                    placeholder={"Добави разход"}
+                    placeholder={"Add expense"}
                     type="number"
                     id={expense.id}
                   />
-                  <Button type="submit">Добави</Button>
+                  <Button type="submit">add</Button>
                 </form>
 
                 <div className={styles.expenses}>
-                  <p>Планирани {expense.planed}</p>
-                  <p>Похарчени {expense.amount}</p>
+                  <p>Planned {expense.planed}</p>
+                  <p>Spend {expense.amount}</p>
 
-                  <p>Остващи {Number(expense.planed) - expense.amount}</p>
+                  <p>Left {Number(expense.planed) - expense.amount}</p>
                 </div>
                 <ProgressBar
                   bgcolor="blue"
@@ -127,7 +127,7 @@ const Expenses = (props) => {
           }
         })}
         <Button className={styles.button} onClick={newBudgetHandler}>
-          Нов Бюджет
+          New budget
         </Button>
       </div>
     </div>
