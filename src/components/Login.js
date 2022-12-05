@@ -41,7 +41,6 @@ const Login = (props) => {
             ],
             planing: true,
           });
-          console.log(userCredentials.user.accrssToken);
         }
       } catch (e) {
         if (e.message === "Firebase: Error (auth/invalid-email).") {

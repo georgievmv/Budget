@@ -110,7 +110,7 @@ const Expenses = (props) => {
 
                 <div className={styles.expenses}>
                   <p>Planned {expense.planed}</p>
-                  <p>Spend {expense.amount}</p>
+                  <p>Spent {expense.amount}</p>
 
                   <p>Left {Number(expense.planed) - expense.amount}</p>
                 </div>
